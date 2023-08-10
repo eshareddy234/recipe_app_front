@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 
-const baseUrl = process.env.baseUrl || "http://localhost:3001";
+const baseUrl = process.env.baseUrl;
 
 export const Auth = () => {
   return (
