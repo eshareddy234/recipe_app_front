@@ -4,7 +4,7 @@ import { useGetUserID } from "../hooks/useGetUserID";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
-import dotenv from 'dotenv'
+import dotenv from 'dotenv';
 dotenv.config({ path: './.env' });
 
 const baseUrl = process.env.baseUrl;
