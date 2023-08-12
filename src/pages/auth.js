@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 
+import dotenv from 'dotenv';
+dotenv.config({ path: './.env' });
 const baseUrl = process.env.baseUrl;
 
 export const Auth = () => {
