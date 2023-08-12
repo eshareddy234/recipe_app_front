@@ -4,7 +4,10 @@ import { useGetUserID } from "../hooks/useGetUserID";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
-const baseUrl = process.env.baseUrl || "http://localhost:3001";
+import dotenv from 'dotenv'
+dotenv.config({ path: './.env' });
+
+const baseUrl = process.env.baseUrl;
 export const CreateRecipe = () => {
   const userID = useGetUserID();
   const [cookies, _] = useCookies(["access_token"]);
